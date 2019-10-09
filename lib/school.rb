@@ -11,8 +11,9 @@ class School
     if roster.keys.include?(grade)
       roster[grade] << student_name
     else
-      roster[grade] = Array.new
-      roster[grade] <<  student_name
+      roster[grade] = [student_name]
+      
+      # roster[grade] <<  student_name
     end
   end
   
