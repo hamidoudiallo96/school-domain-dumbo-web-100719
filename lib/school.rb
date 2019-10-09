@@ -4,9 +4,8 @@ class School
     @name = name
     @roster = Hash.new
   end
-  def roster
-    @roster
-  end
+
+  
   def add_student(student_name,grade)
     if roster.keys.include?(grade)
       roster[grade] << student_name
